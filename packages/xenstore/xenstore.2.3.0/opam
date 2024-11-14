@@ -33,13 +33,13 @@ build: [
   ["dune" "build" "-p" name "-j" jobs]
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
-dev-repo: "git+https://github.com/mirage/ocaml-xenstore.git"
+dev-repo: "git+https://github.com/last-genius/ocaml-xenstore.git"
 url {
   src:
-    "https://github.com/mirage/ocaml-xenstore/releases/download/v2.3.0/xenstore-2.3.0.tbz"
+    "https://github.com/last-genius/ocaml-xenstore/archive/refs/tags/test-oxenstored-buffer.tar.gz"
   checksum: [
-    "sha256=d63c6bbcb2d3c297767d83c0a0f6dd46cecfd4e691f1cf5c5b6554445ec1b3f4"
-    "sha512=5cea990ab16ef708e53605172f708dde6ed15981cca6890939274db6efde1e5b2f9ec5c659d4d2f4115c5e0c3b69bcacc798a0d7fd5c1b75b83ddccd699de189"
+    "sha256=acdae4d400c22392c9f4aee437988aca63cb815fdd7d44416659f0c07006eba4"
+    "sha512=5c6350fc1a0ed968ef0b4c8f60f80af1a1c66b1d091a744ad8d090fea37f5536f5408ca734acb0898fc6e4d505914678db3a4c126b58e2ba3d7877fe7d509a6d"
   ]
 }
-x-commit-hash: "0195baf7409ee6223f5821df63732e6516aa12a0"
+x-commit-hash: "01b9eb8a3f65cc3d402a244c0b901f4a31433203"
