@@ -1,0 +1,46 @@
+opam-version: "2.0"
+name: "opentelemetry-client-plaintext"
+version: "0.10"
+synopsis:
+  "Plaintext client for opentelemetry to use on top of some other library."
+maintainer: [
+  "Simon Cruanes <simon.cruanes.2007@m4x.org>"
+  "Matt Bray <mattjbray@gmail.com>"
+  "ELLIOTTCABLE <opam@ell.io>"
+]
+authors: ["the Imandra team and contributors"]
+license: "MIT"
+homepage: "https://github.com/imandra-ai/ocaml-opentelemetry"
+bug-reports: "https://github.com/imandra-ai/ocaml-opentelemetry/issues"
+depends: [
+  "dune" {>= "2.9"}
+  "ocaml" {>= "4.08"}
+  "opentelemetry" {= version}
+  "odoc" {with-doc}
+]
+build: [
+  ["dune" "subst"] {dev}
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "--promote-install-files=false"
+    "@install"
+    "@runtest" {with-test}
+    "@doc" {with-doc}
+  ]
+  ["dune" "install" "-p" name "--create-install-files" name]
+]
+dev-repo: "git+https://github.com/imandra-ai/ocaml-opentelemetry.git"
+url {
+  src:
+    "https://github.com/last-genius/ocaml-opentelemetry/archive/refs/tags/v0.10-plaintext-client.tar.gz"
+  checksum: [
+    "sha256=5037cd0ef7615025ef5057c0c22be7ce6ba5d9a14b3866a6ee5278df0ae19ad0"
+    "sha512=676b5e016e8e4125830d8cebc2d4b169e14405df2b56de3cb17bc3914ecabb2a5b2e10cb83d5b174d004738dbfa30b4a725d7aa0e69e3e33f98c4c160c590108"
+  ]
+}
+x-commit-hash: "2f6d1bdb2892c05f36bfe1630c5252a2a5bf18ca"
