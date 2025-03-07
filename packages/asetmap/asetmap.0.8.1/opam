@@ -1,0 +1,27 @@
+opam-version: "2.0"
+name: "asetmap"
+maintainer: "Daniel Bünzli <daniel.buenzl i@erratique.ch>"
+authors: ["Daniel Bünzli <daniel.buenzl i@erratique.ch>"]
+homepage: "http://erratique.ch/software/asetmap"
+doc: "http://erratique.ch/software/asetmap/doc"
+license: "ISC"
+dev-repo: "http://erratique.ch/repos/asetmap.git"
+bug-reports: "https://github.com/dbuenzli/asetmap/issues"
+tags: [ "org:erratique" "set" "map" "stdlib" ]
+depends: [
+  "ocamlfind" {build}
+  "ocamlbuild" {build}
+  "topkg" {build} ]
+depopts: []
+build: [
+  "ocaml" "pkg/pkg.ml" "build"
+          "--pinned" "%{pinned}%" ]
+url {
+  src:
+    "https://github.com/dbuenzli/asetmap/archive/refs/tags/v0.8.1.tar.gz"
+  checksum: [
+    "sha256=32bb2406922cd97d69d1876649f657ef950e4d71514713b98de4766126f03314"
+    "sha512=b3992fe3b2eca3e72b1df3c7bd2ddfb235c4b67b7646302fd8d4a13650cb9c2e0a9c456513e09977357f42037a74bea5d8e888c96b817facad13f38a5d235ffb"
+  ]
+}
+x-commit-hash: "a3b70cfd95c6db04a1618db0bb3e8b77dbf164a9"
