@@ -22,10 +22,10 @@ build: [
 dev-repo: "git+https://github.com/mirage/prometheus.git"
 url {
   src:
-    "https://github.com/mirage/prometheus/releases/download/v1.2/prometheus-1.2.tbz"
+    "https://github.com/last-genius/prometheus/archive/refs/tags/v1.2-plus.tar.gz"
   checksum: [
-    "sha256=83643a029a6b6de71d14034eee2e94feff1d08755c4a41d583dc1530ab555bcb"
-    "sha512=bbec7f0728b850b991ec50e76ef2c999341a9469ceaa11b68180f060150c4fe62f3dca87c13914ac331b3d7ef6e46256ae11466b607ecb60d00b8f284cab86b9"
+    "sha256=6cc34d741b44111d1c3ec75ea9d253f4448a67caa508d68c0ab6a9a8c7fc3b60"
+    "sha512=9352fa19008706258b45835a0c3e6ce5df550b6c15527996b7fbfc5b8e5260777c704b0be4dc569c4d5f65307d4e669b1a4281f3e85431de35787031c707db36"
   ]
 }
-x-commit-hash: "d1669d0e0d7e44b104755a0fd9700ae87e140f34"
+x-commit-hash: "2b1e0f85531cd531d52c14cb54b759970becf688"
