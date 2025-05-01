@@ -40,6 +40,7 @@ depends: [
   "message-switch-unix" {= version}
   "mtime"
   "opentelemetry-client-ocurl"
+  "prometheus"
   "pci"
   "pciutil" {= version}
   "polly"
