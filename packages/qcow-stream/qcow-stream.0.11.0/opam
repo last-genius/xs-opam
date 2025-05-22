@@ -1,0 +1,42 @@
+opam-version: "2.0"
+name: "qcow-stream"
+synopsis: "Library offering QCOW streaming capabilities"
+maintainer: ["Dave Scott <dave@recoil.org>"]
+authors: ["David Scott"]
+license: "ISC"
+tags: ["org:mirage"]
+homepage: "https://github.com/mirage/ocaml-qcow"
+bug-reports: "https://github.com/mirage/ocaml-qcow/issues"
+depends: [
+  "dune" {>= "3.17"}
+  "qcow-types" {= version}
+  "cstruct-lwt"
+  "io-page"
+  "lwt"
+  "odoc" {with-doc}
+]
+build: [
+  ["dune" "subst"] {dev}
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "@install"
+    "@runtest" {with-test}
+    "@doc" {with-doc}
+  ]
+]
+dev-repo: "git+https://github.com/last-genius/ocaml-qcow.git"
+url {
+  src:
+    "https://github.com/last-genius/ocaml-qcow/archive/refs/tags/0.11.0-stream.tar.gz"
+  checksum: [
+    "sha256=3c9d28b43400d8a3294df85a3e8a03298b8c68125977cd1258c28b318c0c8202"
+    "sha512=47acedaa4862fb598af7fbf7af35117c0f5e72602b2f3b87b8d1cdff470fd5aee33a5d3f4b8f1b4cddae8ac7b813de87b243117e03f1fb787a16a1b7b7d80ac9"
+  ]
+}
+x-commit-hash: "6fe861ff6b3e804000267e2d93e0e4055860e310"
+x-maintenance-intent: ["(latest)"]
