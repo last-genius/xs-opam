@@ -16,6 +16,7 @@ depends: [
   "h2"
   "http-lib"
   "httpun"
+  "oxenstored"
   "message-switch"
   "message-switch-cli"
   "nbd-tool"
