@@ -34,10 +34,10 @@ dev-repo: "git+https://github.com/mirage/ocaml-qcow.git"
 x-maintenance-intent: ["latest"]
 url {
   src:
-    "https://github.com/mirage/ocaml-qcow/releases/download/0.12.1/qcow-0.12.1.tbz"
+    "https://github.com/last-genius/ocaml-qcow/archive/refs/tags/0.12.1-empty.tar.gz"
   checksum: [
-    "sha256=c799f3c2eda00b345d37ccd759bcd7b8be8744216b77a38883ff4cd99727ae37"
-    "sha512=2160598f460240f9580991e7f7d69e3ef83a2e6ec62268b711840d359cd303d4e14a5d65d89ceb82a6f77b434d06a01af9daa7780808a885f3307909c11dcfd8"
+    "sha256=082ef3ebc0edb6818a82ac3e99ce9c9592b6ff84f5ce4195f4e533b81fdcb101"
+    "sha512=6235de7867b8b540b14defe3da76a922fbdc694cb1b9169d6fbee8e13ac33e68550315477a95cf5994d6a495224b679d102a6ae415f4591b8f3104ca55a67ae1"
   ]
 }
-x-commit-hash: "e9f228b3626aef9275c43f539bb9959d8d167314"
+x-commit-hash: "4ea238fec6a27cecfa8f23ddc8bbb0581f989fdf"
