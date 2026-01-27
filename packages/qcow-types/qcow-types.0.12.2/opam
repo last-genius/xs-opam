@@ -35,14 +35,15 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/mirage/ocaml-qcow.git"
+dev-repo: "git+https://github.com/last-genius/ocaml-qcow.git"
 x-maintenance-intent: ["latest"]
 url {
   src:
-    "https://github.com/mirage/ocaml-qcow/releases/download/0.12.2/qcow-0.12.2.tbz"
+    "https://github.com/last-genius/ocaml-qcow/archive/refs/tags/0.12.2-outsideref.tar.gz"
   checksum: [
-    "sha256=bb12f9f37ad69b54af000e64add460034ea09102687aacb4f748488afe83c868"
-    "sha512=883fc7a1d98ee1c272408829050a0b56c785664bc16c0820440d638039e08e55c458813728c2f8c8ac49ceea582a79c3d93142664d5134f87e6bb6618a6b8f66"
+    "sha256=cd26d7eda305cc6805dd788f2e45e2f393ac0a9eef3e8374f8648219a6d76e11"
+    "sha512=e1a85998c0babb3d833ca5705a5d399c503a4d9a379b0574774e2a0f83593602fe352fde61f868e5aa4a98d9a65bbc1139dc40920296630f5a2fbca7663ea7b9"
   ]
 }
-x-commit-hash: "b7fc9dfd4b071b49eebbfdf7401551eb305bda01"
+x-commit-hash: "e18cf59220a8c422691285e31ba03ba52563b112"
+
