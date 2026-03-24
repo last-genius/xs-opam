@@ -40,10 +40,10 @@ dev-repo: "git+https://github.com/mirage/ocaml-qcow.git"
 x-maintenance-intent: ["latest"]
 url {
   src:
-    "https://github.com/mirage/ocaml-qcow/releases/download/0.13.0/qcow-0.13.0.tbz"
+    "https://github.com/last-genius/ocaml-qcow/archive/refs/tags/0.13.0-snapfix.tar.gz"
   checksum: [
-    "sha256=73375f94d9d4427ec82ee21ac3b2458ed143f616767f535be25e0a77afe1f577"
-    "sha512=7af72eb3a1185879a71731443ad3756a8ca6732ae3ddf8d4dce710890af7be19e1d883048c87d71d962de12e3719b0a38baea3be2aa9533e3d58d355ad2faf14"
+    "sha256=2c3de450ee1df78ec96766bd6f265d1d11f1912aac26d824a5e110f7a33b9dfa"
+    "sha512=60b39fd592340ef1dab0e914163d4f0257b971273326578292ffa27964a46974753737230a4c00a9d94d0915e260f40efe135e9fab4be5d750bf1d2e5cb314af"
   ]
 }
-x-commit-hash: "8db9e1af04cc2b797d7b7ba8b45bfb20ad6731b4"
+x-commit-hash: "925b21580908309a68729734f174e5c42d6b2a8c"
