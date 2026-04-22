@@ -24,10 +24,10 @@ build: [
 dev-repo: "git+https://github.com/xapi-project/ocaml-qmp"
 url {
   src:
-    "https://github.com/xapi-project/ocaml-qmp/releases/download/v0.20.0/qmp-0.20.0.tbz"
+    "https://github.com/last-genius/ocaml-qmp/archive/refs/tags/v0.20.0.romfile.tar.gz"
   checksum: [
-    "sha256=5672d9433728adec8151990779a2e8662372455369302bc104b9b1c0b853cfb6"
-    "sha512=504a5eba180c862132de4d85974162ed8eb95ab9e16c8d00bd7f891141766418a354aba004fd49967ac9b7d213c2d910ef1f36cfb8cf409aa7444acac09a7039"
+    "sha256=1621a57ed29d980415493aa1d75d580a664cda6a66c5928137361445ef2e8634"
+    "sha512=718f8b9d198b6af57e0fda9b1e90956d135f2738acfe509c6717f161175b05228f9b02aec9b294cb8ec7be6834c3bc6c444366367aab2fd488a38cc36873baa9"
   ]
 }
-x-commit-hash: "051df743d20d598a10e6b3f2004eb0ee09179515"
+x-commit-hash: "3f5808c386a20ece7c3288ffca44663258262a91"
