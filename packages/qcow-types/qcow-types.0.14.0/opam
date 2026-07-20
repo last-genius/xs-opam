@@ -36,14 +36,14 @@ build: [
   "@runtest" {with-test}
   "@doc" {with-doc}
 ]
-dev-repo: "git+https://github.com/mirage/ocaml-qcow.git"
+dev-repo: "git+https://github.com/last-genius/ocaml-qcow.git"
 x-maintenance-intent: ["latest"]
 url {
   src:
-    "https://github.com/mirage/ocaml-qcow/releases/download/0.14.0/qcow-0.14.0.tbz"
+    "https://github.com/last-genius/ocaml-qcow/archive/refs/tags/0.14.0-fixpercent.tar.gz"
   checksum: [
-    "sha256=0c7845059853675ae99bf0d1463670f81af4e84131f9c871e0cc5e813fb53504"
-    "sha512=5bb14b6a1ca355f09fc800692ba97590c6d653823b4df951a11c3bfd83c574b41364e32b124738c219bbb5d11af3ea04d7b69afe9562f5112c2cb6b6834e77d1"
+    "sha256=e87dc8766c225c5fece0f18aed9c043412814cbf94a36df1220a197ada2fe748"
+    "sha512=a746d77363d359a067f4eab427e97f396fdd3fac51dc5e61be5ef380558ea89071e2b6dcc719bf90b197ba5aad1290cb8bca47f4df3f17ed49a124a441a4c823"
   ]
 }
-x-commit-hash: "1eacfe0af61f1743ea17aecf96901fdb70304b85"
+x-commit-hash: "2656e6b2c44f8b5ba0ab5eef3f796d0d2d8e7e4e"
