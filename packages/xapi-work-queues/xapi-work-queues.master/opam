@@ -7,9 +7,9 @@ homepage: "https://xapi-project.github.io/"
 bug-reports: "https://github.com/xapi-project/xen-api/issues"
 depends: [
   "dune" {>= "3.20"}
-  "odoc" {with-doc}
   "ppx_deriving_rpc"
   "xapi-stdext-threads"
+  "odoc" {with-doc}
 ]
 build: [
   ["dune" "subst"] {dev}
@@ -28,5 +28,5 @@ build: [
 dev-repo: "git+https://github.com/xapi-project/xen-api.git"
 x-maintenance-intent: ["(latest)"]
 url {
-  src: "https://github.com/xapi-project/xen-api/archive/master.tar.gz"
+  src: "git+https://github.com/xapi-project/xen-api#master"
 }

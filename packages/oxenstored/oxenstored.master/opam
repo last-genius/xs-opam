@@ -31,5 +31,5 @@ build: [
 dev-repo: "git+https://github.com/xapi-project/oxenstored.git"
 x-maintenance-intent: ["(latest)"]
 url {
-  src: "https://github.com/xapi-project/oxenstored/archive/master.tar.gz"
+  src: "git+https://github.com/xapi-project/oxenstored#main"
 }

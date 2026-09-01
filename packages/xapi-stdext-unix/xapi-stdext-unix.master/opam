@@ -43,5 +43,5 @@ x-maintenance-intent: ["(latest)"]
 depexts: ["linux-headers"] {os-distribution = "alpine"}
 available: [ os = "linux" ]
 url {
-  src: "https://github.com/xapi-project/xen-api/archive/master.tar.gz"
+  src: "git+https://github.com/xapi-project/xen-api#master"
 }

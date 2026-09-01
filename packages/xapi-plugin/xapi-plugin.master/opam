@@ -28,5 +28,5 @@ build: [
 ]
 dev-repo: "git+https://github.com/xapi-project/ocaml-xapi-plugin.git"
 url {
-  src: "https://github.com/xapi-project/ocaml-xapi-plugin/archive/master.tar.gz"
+  src: "git+https://github.com/xapi-project/ocaml-xapi-plugin#master"
 }

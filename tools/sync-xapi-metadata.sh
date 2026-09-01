@@ -17,7 +17,7 @@ message-switch-cli        $XAPI/xen-api
 message-switch-core       $XAPI/xen-api
 message-switch-lwt        $XAPI/xen-api
 message-switch-unix       $XAPI/xen-api
-oxenstored                $XAPI/oxenstored
+oxenstored                $XAPI/oxenstored           main
 pciutil                   $XAPI/xen-api
 qcow-stream-tool          $XAPI/xen-api
 rrd-transport             $XAPI/xen-api
@@ -70,11 +70,13 @@ xenmmap                   $XAPI/xenctrl
 xml-light2                $XAPI/xen-api
 zstd                      $XAPI/xen-api"
 
-echo "$MAP" | while read -r name repo; do
+echo "$MAP" | while read -r name repo branch; do
   opam_file="packages/$name/$name.master/opam"
+  # default branch is master
+  [[ -z "$branch" ]] && branch="master"
   url_source="\
 url {
-  src: \"https://github.com/$repo/archive/master.tar.gz\"
+  src: \"git+https://github.com/$repo#$branch\"
 }"
 
   old="https://raw.githubusercontent.com/$repo/master/$name.opam"

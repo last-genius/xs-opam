@@ -33,5 +33,5 @@ build: [
 dev-repo: "git+https://github.com/xapi-project/xen-api.git"
 x-maintenance-intent: ["(latest)"]
 url {
-  src: "https://github.com/xapi-project/xen-api/archive/master.tar.gz"
+  src: "git+https://github.com/xapi-project/xen-api#master"
 }
