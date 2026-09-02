@@ -76,7 +76,7 @@ jobs:
 
       - name: Build xs-toolstack, test its dependencies
         run: |
-          opam list -s --required-by xs-toolstack | xargs opam install -t
+          opam install -y xs-toolstack -t
         env:
           # OPAMCOLOR is set to "always" by default and it breaks piping
           OPAMCOLOR: NEVER
